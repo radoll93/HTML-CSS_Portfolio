@@ -13,13 +13,14 @@ h1{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h3{
     font-size: 1.5rem;
 }
 
+/* navigation style */
 nav{
     font-family: Geneva, Tahoma, sans-serif;
     width: 17%;
@@ -29,14 +30,14 @@ nav{
     border-right: var(--backgroundcolor) solid 3px;
 }
 
-
-
 footer{
     background-color: var(--backgroundcolor);
     color: white;
     padding: 20px;
     text-align: center;
 }
+
+/* header style & background image */
 
 header{
     background-color: var(--backgroundcolor);
@@ -80,16 +81,20 @@ header{
     position: relative;
     top: -100px;
     background-color: var(--backgroundcolor);
-    padding: 10px;
+    padding: 7px;
+    margin-right: 20px;
+    line-height: 1.5rem;
+    text-align: right;
 }
 
+/* main contents */
 .main section{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
+
 .aboutme ol{
-    display: block-flex;
     max-width: 55%;
     list-style-type: disc;
     margin: 15px;
@@ -107,24 +112,26 @@ header{
 .workbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 60%;
+    justify-content: first baseline;
+    width: 80%;
 }
 
 .workbox img {
     display: inline;
-    width: 43%;
+    width: 300px;
     height: 300px;
     margin: 20px;
 }
-.contactme ul {
-    display: inline-flex;
-}
 
+.workbox img:hover{
+    filter: opacity(50%);
+    cursor: grab;
+}
 .contactme li {
     display: inline-block;
     font-size: 1.25rem;
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 30px; 
     font-weight: bolder;
 }
 .contactme a {
@@ -132,3 +139,67 @@ header{
     text-underline-position: under;
     color: var(--backgroundcolor);
 }
+
+.resume button {
+    margin: 30px;
+    padding: 10px;
+    background-color: wheat;
+    color:var(--backgroundcolor);
+    font-family:fantasy;
+    font-size: 20px;
+    cursor: grab;
+    border: none;
+}
+
+/* button effect to click */
+
+.resume button:hover{
+    background-color: var(--backgroundcolor);
+    color: wheat;
+}
+
+.resume button:active{
+    font-size: 30px;
+    box-shadow: 0 0 10px #000 inset;
+}
+
+/* button click pseudo- coming soon! */
+.resume button:focus::after {
+    content: " --> coming soon!";
+    background-color: transparent;
+    color: red;
+}
+
+
+/* nav border turn to horizontally when shrink */
+/* workboxes size fit to width and hover */
+
+@media screen and (max-width: 1250px) {
+    nav {
+        border-bottom: var(--backgroundcolor) solid 3px;
+        border-right: none;
+        width: 80%;
+        margin: 30px;
+        text-align: left;
+    }
+
+    .aboutme ol, .profile {
+        max-width: 80%;
+        margin-left: 30px;
+    }
+
+    .main section {
+        display: block;
+        justify-content: center;
+    }
+}
+
+/* contactme lists are aligned to vertically */
+   
+@media screen and (max-width: 800px) {
+    .contactme li {
+        display: block;
+        margin: 30px;
+    }
+}
+
