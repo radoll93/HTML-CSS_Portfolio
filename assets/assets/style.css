@@ -268,4 +268,7 @@ header{
         margin: 30px;
     }
 
+    .header li {
+        font-size: 70%;
+    }
 }
