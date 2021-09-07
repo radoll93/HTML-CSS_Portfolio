@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -14,20 +14,33 @@ h1{
 
 h2{
     font-size: 2.5rem;
+    font-family: fantasy;
 }
 
 h3{
     font-size: 1.5rem;
 }
 
-/* navigation style */
+h4{
+    font-size: 1rem;
+}
+span {
+    font-size: 150%;
+    font-weight: bolder;
+    color: red;
+    text-shadow: 2px 2px 2px gray;
+}
+
+
+
+/* navigation style, font change */
 nav{
-    font-family: Geneva, Tahoma, sans-serif;
-    width: 17%;
+    font-family: fantasy;
+    width: 15%;
     word-wrap: wrap;
     padding: 15px;
     margin: 10px;
-    border-right: var(--backgroundcolor) solid 3px;
+    border-right: var(--backgroundcolor) solid 7px;
 }
 
 footer{
@@ -67,7 +80,8 @@ header{
 .header a{
     color: wheat;
     text-decoration: none;
-}
+    }
+
 .header img {
     display: flexbox;
     width: 90%;
@@ -90,6 +104,7 @@ header{
 /* main contents */
 .main section{
     display: flex;
+    display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
@@ -97,8 +112,8 @@ header{
 .aboutme ol{
     max-width: 55%;
     list-style-type: disc;
-    margin: 15px;
-    line-height: 2rem;
+    margin: auto;
+    line-height: 1.5rem;
 }
 
 
@@ -107,6 +122,8 @@ header{
     width: 15rem;
     border-radius: 140px;
     margin: 15px;
+    border: var(--backgroundcolor) solid 5px;
+    box-shadow: 10px 10px 10px gray;
 }
 
 .workbox {
@@ -116,29 +133,72 @@ header{
     width: 80%;
 }
 
-.workbox img {
+
+.workbox button {
     display: inline;
     width: 300px;
     height: 300px;
-    margin: 20px;
+    background-color: transparent;
+    border: 0px;
+    margin: 10px;
 }
 
-.workbox img:hover{
+
+.workbox img {
+    display: inline;
+    border: var(--backgroundcolor) solid 6px;
+    box-shadow: 10px 10px 10px gray;
+    width: 100%;
+    height: 100%;
+}
+
+.imgdes {
+    background-color: var(--backgroundcolor);
+    width: 40%;
+    color: white;
+    position: relative;
+    top: -285px;
+    line-height: 2rem;
+}
+
+#financebutton {
+    width: 93%;
+}
+
+/* image border & shadow */
+
+
+.workbox button:focus {
+    filter: grayscale(50%);
+}
+
+.workbox button:hover {
     filter: opacity(50%);
     cursor: grab;
 }
+
+.workbox img:active {
+    border: 0px;
+}
+
 .contactme li {
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 50px;
     margin-left: 30px; 
     font-weight: bolder;
 }
 .contactme a {
     text-decoration: underline;
-    text-underline-position: under;
-    color: var(--backgroundcolor);
+    text-underline-position: unders;
+    color: black;
+    text-shadow: 3px 3px 3px gray;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* contactme hover effect */
+
+
 
 .resume button {
     margin: 30px;
@@ -146,12 +206,13 @@ header{
     background-color: wheat;
     color:var(--backgroundcolor);
     font-family:fantasy;
-    font-size: 20px;
+    font-size: 1.5rem;
     cursor: grab;
     border: none;
+    box-shadow: 5px 5px 5px gray;
 }
 
-/* button effect to click */
+/* button effect to hover and active  */
 
 .resume button:hover{
     background-color: var(--backgroundcolor);
@@ -165,14 +226,15 @@ header{
 
 /* button click pseudo- coming soon! */
 .resume button:focus::after {
-    content: " --> coming soon!";
+    content: " -> coming soon!";
     background-color: transparent;
     color: red;
+
 }
 
 
 /* nav border turn to horizontally when shrink */
-/* workboxes size fit to width and hover */
+/* workboxes fit and flex to width */
 
 @media screen and (max-width: 1250px) {
     nav {
@@ -188,6 +250,10 @@ header{
         margin-left: 30px;
     }
 
+    .workbox button {
+        flex: 1 1 auto;
+    }
+
     .main section {
         display: block;
         justify-content: center;
@@ -201,5 +267,5 @@ header{
         display: block;
         margin: 30px;
     }
-}
 
+}
