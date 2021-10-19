@@ -152,7 +152,8 @@ header{
     height: 100%;
 }
 
-.imgdes {
+
+.images {
     background-color: var(--backgroundcolor);
     width: 40%;
     color: white;
@@ -253,6 +254,7 @@ header{
     .workbox button {
         flex: 1 1 auto;
     }
+
 
     .main section {
         display: block;
