@@ -20,5 +20,5 @@ https://radoll93.github.io/Portfolio_HTML-CSS/
 
 8. You can see preview version of my page.
 
-![portfolio demo](./assets/images/Portfolio_for_Bora_Lee.gif)
+![portfolio demo](./assets/images/Portfolio.gif)
 
