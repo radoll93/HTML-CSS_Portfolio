@@ -16,7 +16,7 @@ In the portfolio page,
 
 7. The portfolio page is on below link.
 
-https://radoll93.github.io/Portfolio_HTML-CSS/
+https://radoll93.github.io/Homework2_Portfolio_HTML-CSS/
 
 8. You can see preview version of my page.
 
