@@ -148,22 +148,35 @@ header{
     display: inline;
     border: var(--backgroundcolor) solid 6px;
     box-shadow: 10px 10px 10px gray;
-    width: 100%;
+    width: 60;
     height: 100%;
+    margin-left: 41%;
 }
 
 
-.images {
+.details {
     background-color: var(--backgroundcolor);
     width: 40%;
+    height: 80%;
     color: white;
     position: relative;
     top: -285px;
     line-height: 2rem;
 }
 
-#financebutton {
-    width: 93%;
+.detailbody {
+    display: flex;
+    text-align: left;
+    font-size: small;
+    font-family:monospace;
+    padding: 2px;
+    max-width: 90%;
+
+}
+
+
+#workboxbtn {
+    width: 80%;
 }
 
 /* image border & shadow */
