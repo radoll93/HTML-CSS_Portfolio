@@ -148,7 +148,7 @@ header{
     display: inline;
     border: var(--backgroundcolor) solid 6px;
     box-shadow: 10px 10px 10px gray;
-    width: 60;
+    width: 70%;
     height: 100%;
     margin-left: 41%;
 }
